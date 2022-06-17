@@ -1,0 +1,108 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #c4c4c4;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #cda45e;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d9ba85;
+    text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    [data-aos-delay] {
+        transition-delay: 0 !important;
+    }
+}
+
+
+/*--------------------------------------------------------------
+  # Top Bar
+  --------------------------------------------------------------*/
+#topbar {
+    height: 50px;
+    font-size: 14px;
+    transition: all 0.5s;
+    z-index: 996;
+    background-color: #1f1e24;
+    border-bottom: 3px solid #f68b1f;
+}
+
+#topbar.topbar-scrolled {
+    top: -40px;
+}
+
+#topbar .contact-info i {
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+}
+#topbar .contact-info .tour-title {
+    font-size: 14px;
+    background-color: #000;
+    color: white;
+    padding: 0px 5px;
+    display: inline-block;
+    line-height: 24px;
+    margin-right: 5px;
+}
+
+#topbar .contact-info .ah-headline {
+    color: white;
+    font-size: 14px;
+}
+
+#topbar .contact-info i span {
+    padding-left: 5px;
+    color: #fff;
+}
+#topbar .contact-info i:hover{
+    color: #f68b1f;
+}
+
+#topbar .languages ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #cda45e;
+}
+
+#topbar .languages ul a {
+    color: white;
+}
+
+#topbar .languages ul li+li {
+    padding-left: 10px;
+}
+
+#topbar .languages ul li+li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    content: "/";
+}
