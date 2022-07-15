@@ -29,6 +29,9 @@
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/710c814132.js" crossorigin="anonymous"></script>
 
+  <!-- swiper js -->
+  <link rel="stylesheet" href="js/swiper/swiper-bundle.min.css">
+
   <!-- bootstrap css -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- icofontcss -->
@@ -45,31 +48,725 @@
 
 
   <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="d-flex align-items-center fixed-top">
-    <div class="container d-flex justify-content-center justify-content-md-between">
+  <section>
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+      <div class="container d-flex justify-content-center justify-content-md-between">
 
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-phone d-flex align-items-center"><span><i class="fa-brands fa-facebook"></i></span></i>
-        <i class="bi bi-clock d-flex align-items-center ms-2"><span> <i class="fa-brands fa-twitter"></i></span></i>
-        <i class="bi bi-clock d-flex align-items-center ms-2"><span> <i class="fa-brands fa-linkedin"></i></span></i>
-        <i class="bi bi-clock d-flex align-items-center ms-2"><span> <i class="fa-brands fa-google-plus-g"></i></span></i>
-        <i class="bi bi-clock d-flex align-items-center ms-2"><span> <i class="fa-brands fa-instagram"></i></span></i>
-        <i class="bi bi-clock d-flex align-items-center ms-4"><span class="tour-title"> Tournaments</span></i>
-        <i class="bi bi-phone d-flex align-items-center"><span class="ah-headline ">Contrary to popular belief</span></i>
-      </div>
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-phone d-flex align-items-center"><span><i class="fa-brands fa-facebook"></i></span></i>
+          <i class="bi bi-clock d-flex align-items-center ms-2"><span> <i class="fa-brands fa-twitter"></i></span></i>
+          <i class="bi bi-clock d-flex align-items-center ms-2"><span> <i class="fa-brands fa-linkedin"></i></span></i>
+          <i class="bi bi-clock d-flex align-items-center ms-2"><span> <i
+                class="fa-brands fa-google-plus-g"></i></span></i>
+          <i class="bi bi-clock d-flex align-items-center ms-2"><span> <i class="fa-brands fa-instagram"></i></span></i>
+          <i class="bi bi-clock d-flex align-items-center ms-4"><span class="tour-title"> Tournaments</span></i>
+          <i class="bi bi-phone d-flex align-items-center"><span class="ah-headline ">Contrary to popular
+              belief</span></i>
+        </div>
 
-      <div class="languages d-none d-md-flex align-items-center">
-        <ul>
-          <li><a href="#">
-            <i class="fa-solid fa-user"></i>  <span style="margin-left: 7px;">Login</span>
-          </a></li>
-          <li><a href="#">
-            <i class="fa-solid fa-right-to-bracket "></i>  <span style="margin-left: 7px;">Sign Up</span>
-          </a></li>
-        </ul>
+        <div class="languages d-none d-md-flex align-items-center">
+          <ul>
+            <li><a href="#">
+                <i class="fa-solid fa-user"></i> <span style="margin-left: 7px;">Login</span>
+              </a></li>
+            <li><a href="#">
+                <i class="fa-solid fa-right-to-bracket "></i> <span style="margin-left: 7px;">Sign Up</span>
+              </a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+
+
+  <!-- ======= medium Bar ======= -->
+  <section>
+    <div id="mediumbar" class="d-flex align-items-center fixed-top">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-phone d-flex align-items-center"><span><img src="img/icons/logo.png" alt=""></span></i>
+          <i class="bi bi-clock d-flex align-items-center ms-4"><span style="padding-left: 45px;"> <img
+                src="img/Home-bannaer/3.jpg" alt=""></span></i>
+        </div>
+
+        <div class="languages d-none d-md-flex align-items-center">
+          <ul class="top-product-items d-flex justify-content-center align-items-center ">
+            <li>
+              <div class="item" style="margin-right: 10px;">
+                <img src="img/icons/17.png" alt="">
+                <div class="content">
+                  <h3 class="product-title">
+                    Headphone 2
+                  </h3>
+                  <span class="price">$169.00</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <img src="img/icons/18.png" alt="">
+                <div class="content">
+                  <h3 class="product-title">
+                    Headphone
+                  </h3>
+                  <span class="price">$169.00</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente ">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Page</a></li>
+          <li><a class="nav-link scrollto" href="#menu">overview</a></li>
+          <li><a class="nav-link scrollto" href="#specials">Community</a></li>
+          <li><a class="nav-link scrollto" href="#events">Store</a></li>
+          <li class="dropdown"><a href="#"><span>Blog</span> <i class="fa-solid fa-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Full Width</a></li>
+              <li class="dropdown"><a href="#"><span>Right Sidebar</span> <i class="fa-solid fa-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Home Shooter</a></li>
+                  <li><a href="#">Home Clan</a></li>
+                  <li><a href="#">Home Zoombie</a></li>
+                  <li><a href="#">Home Magazine</a></li>
+                  <li><a href="#">404 Page</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Left Sidebar</a></li>
+              <li><a href="#">Details Right</a></li>
+              <li><a href="#">Details Left</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <a href="#book-a-table" class=" scrollto d-none d-lg-flex">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </a>
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+
+  <!-- ======= Banner ======= -->
+  <!-- <section id="banner-magazine" class="banner-magazine">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="game-items">
+            <div class="item">
+              <img src="img/games/7.jpg" alt="game-items">
+              <div class="game-content">
+                <h3 class="game-title">Happy 2017. Here's an Update!</h3>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="meta">
+                  <p><i class="fa-solid fa-comments"></i> 220 Comments</p>
+                  <p> <i class="fa-solid fa-eye"></i> 2250 View</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="game-items">
+            <div class="item">
+              <img src="img/games/8.jpg" alt="game-items">
+              <div class="game-content">
+                <h3 class="game-title">Starcraft II: Legacy of the Void</h3>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="meta">
+                  <p><i class="fa-solid fa-comments"></i> 330 Comments</p>
+                  <p> <i class="fa-solid fa-eye"></i>  2150 View</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="game-items">
+            <div class="item">
+              <img src="img/games/3.jpg" alt="game-items">
+              <div class="game-content">
+                <h3 class="game-title">Star Wars Battlefront II</h3>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="meta">
+                  <p style="margin-right: 15px;><i class="fa-solid fa-comments"></i> 220 Comments</p>
+                  <p> <i class="fa-solid fa-eye"></i> 2250 View</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="game-items">
+            <div class="item">
+              <img src="img/games/4.jpg" alt="game-items">
+              <div class="game-content">
+                <h3 class="game-title">Super Mario Odyssey II</h3>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="meta">
+                  <p style="margin-right: 15px;"><i class="fa-solid fa-comments"></i> 200 Comments</p>
+                  <p> <i class="fa-solid fa-eye"></i>   2650 View</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+  <!-- ======= Events Section ======= -->
+  <section id="banner-magazine" class="banner-magazine">
+    <div class="" data-aos="fade-up">
+
+      <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="game-items swiper-slide event-item d-flex flex-column justify-content-end">
+            <div class="item">
+              <img src="img/games/7.jpg" alt="game-items">
+              <div class="game-content">
+                <h3 class="game-title">Happy 2017. Here's an Update!</h3>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="meta">
+                  <p><i class="fa-solid fa-comments"></i> 220 Comments</p>
+                  <p> <i class="fa-solid fa-eye"></i> 2250 View</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-items swiper-slide event-item d-flex flex-column justify-content-end">
+            <div class="item">
+              <img src="img/games/8.jpg" alt="game-items">
+              <div class="game-content">
+                <h3 class="game-title">Starcraft II: Legacy of the Void</h3>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="meta">
+                  <p><i class="fa-solid fa-comments"></i> 330 Comments</p>
+                  <p> <i class="fa-solid fa-eye"></i> 2150 View</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-items swiper-slide event-item d-flex flex-column justify-content-end">
+            <div class="item">
+              <img src="img/games/3.jpg" alt="game-items">
+              <div class="game-content">
+                <h3 class="game-title">Star Wars Battlefront II</h3>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="meta">
+                  <p style="margin-right: 15px;><i class=" fa-solid fa-comments"></i> 220 Comments</p>
+                  <p> <i class="fa-solid fa-eye"></i> 2250 View</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-items swiper-slide event-item d-flex flex-column justify-content-end">
+            <div class="item">
+              <img src="img/games/4.jpg" alt="game-items">
+              <div class="game-content">
+                <h3 class="game-title">Super Mario Odyssey II</h3>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="meta">
+                  <p style="margin-right: 15px;"><i class="fa-solid fa-comments"></i> 200 Comments</p>
+                  <p> <i class="fa-solid fa-eye"></i> 2650 View</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-items swiper-slide event-item d-flex flex-column justify-content-end">
+            <div class="item">
+              <img src="img/games/6.jpg" alt="game-items">
+              <div class="game-content">
+                <h3 class="game-title">Hearthstone: Heroes of</h3>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="meta">
+                  <p style="margin-right: 15px;"><i class="fa-solid fa-comments"></i> 220 Comments</p>
+                  <p> <i class="fa-solid fa-eye"></i> 2250 View</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="game-items swiper-slide event-item d-flex flex-column justify-content-end">
+            <div class="item">
+              <img src="img/games/5.jpg" alt="game-items">
+              <div class="game-content">
+                <h3 class="game-title">YO-KAI WATCH 2: Psychic </h3>
+                <div class="review">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="meta">
+                  <p style="margin-right: 15px;"><i class="fa-solid fa-comments"></i> 20 Comments</p>
+                  <p> <i class="fa-solid fa-eye"></i> 220 View</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+
+    </div>
+  </section><!-- End Events Section -->
+
+  <!-- ======= Blog Post ======= -->
+  <section class="blog-post-two-wrap" id="blog-post-two-wrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="blog-post-two blog-large">
+            <div class="feature-image">
+              <a href="#">
+                <img src="img/Blog/4 (1).jpg" alt="">
+              </a>
+              <div class="blog-content">
+                <ul class="cat">
+                  <li><a class="tim-btn" href="#">Advancer</a></li>
+                  <li><a href="#" class="tim-btn">Sports</a></li>
+                </ul>
+                <h3 class="blog-title"><a href="#">Black Friday 2018 Deals: All The PS4, Xbox One, Switch, 3DS, And PC
+                    Game Sales</a></h3>
+                <div class="meta">
+                  <a href="#"><span class="admin">George Steven.</span></a>
+                  <a href="#"><span class="date">5 month ago</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12">
+          <div class="blog-post-two blog-small mb__17 pr__15">
+            <div class="feature-image">
+              <a href="#">
+                <img src="img/Blog/5.jpg" alt="">
+              </a>
+              <div class="blog-content">
+                <ul class="cat">
+                  <li><a class="tim-btn" href="#">Advancer</a></li>
+                  <li><a href="#" class="tim-btn">Sports</a></li>
+                </ul>
+                <h3 class="blog-titles"><a href="#">Horizon: Zero Dawn Wiki: Power Cell Locations</a></h3>
+                <div class="meta">
+                  <a href="#"><span class="admin">George Steven.</span></a>
+                  <a href="#"><span class="date">5 month ago</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-post-two blog-small mb__17 pr__15">
+            <div class="feature-image">
+              <a href="#">
+                <img src="img/Blog/6.jpg" alt="">
+              </a>
+              <div class="blog-content">
+                <ul class="cat">
+                  <li><a class="tim-btn" href="#">Advancer</a></li>
+                  <li><a href="#" class="tim-btn">Sports</a></li>
+                </ul>
+                <h3 class="blog-titles"><a href="#">Horizon: Zero Dawn Wiki: Power Cell Locations</a></h3>
+                <div class="meta">
+                  <a href="#"><span class="admin">George Steven.</span></a>
+                  <a href="#"><span class="date">5 month ago</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="recent-news-inner">
+        <div class="section-mini-title">
+          <h2 class="title">Latest Article</h2>
+        </div>
+
+        <!-- secation mini tittle -->
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 col-md-6">
+            <div class="recent-news">
+              <div class="feature-image">
+                <a href="#">
+                  <img src="img/Blog/7.jpg" alt="">
+                </a>
+              </div>
+              <h3 class="blog-title">
+                <a href="#">Final Fantasy XV: ‘Good News’ Coming at Gamescom</a>
+              </h3>
+              <ul class="meta meta-grey">
+                <li class="mr__0"><a href="#" class="admin">George Steven</a></li>
+                <li><a href="#" class="date">5 month ago</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-md-6">
+            <div class="recent-news">
+              <div class="feature-image">
+                <a href="#">
+                  <img src="img/Blog/8.jpg" alt="">
+                </a>
+              </div>
+              <h3 class="blog-title">
+                <a href="#">Final Fantasy XV: ‘Good News’ Coming at Gamescom</a>
+              </h3>
+              <ul class="meta meta-grey">
+                <li class="mr__0"><a href="#" class="admin">George Steven</a></li>
+                <li><a href="#" class="date">5 month ago</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-md-6">
+            <div class="recent-news">
+              <div class="feature-image">
+                <a href="#">
+                  <img src="img/Blog/9.jpg" alt="">
+                </a>
+              </div>
+              <h3 class="blog-title">
+                <a href="#">Final Fantasy XV: ‘Good News’ Coming at Gamescom</a>
+              </h3>
+              <ul class="meta meta-grey">
+                <li class="mr__0"><a href="#" class="admin">George Steven</a></li>
+                <li><a href="#" class="date">5 month ago</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-md-6">
+            <div class="recent-news">
+              <div class="feature-image">
+                <a href="#">
+                  <img src="img/Blog/10.jpg" alt="">
+                </a>
+              </div>
+              <h3 class="blog-title">
+                <a href="#">Final Fantasy XV: ‘Good News’ Coming at Gamescom</a>
+              </h3>
+              <ul class="meta meta-grey">
+                <li class="mr__0"><a href="#" class="admin">George Steven</a></li>
+                <li><a href="#" class="date">5 month ago</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======= Top News ======= -->
+  <section id="weekly-top" class="weekly-top">
+    <div class="container">
+      <div class="section-title-two">
+        <h2 class="title">Weekly Top News</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+
+            <div class="col-md-6">
+              <div class="top-news mb__30">
+                <div class="feature-image">
+                  <a href="">
+                    <img src="img/top-news/16.jpg" alt="">
+                  </a>
+                </div>
+                <ul class="cat-two">
+                  <li><a href="#">Advancer,</a></li>
+                  <li><a href="#">Sports</a></li>
+                </ul>
+                <h3 class="blog-title">
+                  <a href="#">Final Fantasy XV: ‘Good News’ Coming at Gamescom</a>
+                </h3>
+              </div>
+              <div class="top-news mb__30">
+                <div class="feature-image">
+                  <a href="">
+                    <img src="img/top-news/17.jpg" alt="">
+                  </a>
+                </div>
+                <ul class="cat-two">
+                  <li><a href="#">Advancer,</a></li>
+                  <li><a href="#">Sports</a></li>
+                </ul>
+                <h3 class="blog-title">
+                  <a href="#">Final Fantasy XV: ‘Good News’ Coming at Gamescom</a>
+                </h3>
+              </div>
+              <div class="top-news mb__30">
+                <div class="feature-image">
+                  <a href="">
+                    <img src="img/top-news/18.jpg" alt="">
+                  </a>
+                </div>
+                <ul class="cat-two">
+                  <li><a href="#">Advancer,</a></li>
+                  <li><a href="#">Sports</a></li>
+                </ul>
+                <h3 class="blog-title">
+                  <a href="#">Final Fantasy XV: ‘Good News’ Coming at Gamescom</a>
+                </h3>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="top-news mb__30">
+                <div class="feature-image">
+                  <a href="">
+                    <img src="img/top-news/12.jpg" alt="">
+                  </a>
+                </div>
+                <ul class="cat-two">
+                  <li><a href="#">Advancer,</a></li>
+                  <li><a href="#">Sports</a></li>
+                </ul>
+                <h3 class="blog-title">
+                  <a href="#">Final Fantasy XV: ‘Good News’ Coming at Gamescom</a>
+                </h3>
+              </div>
+              <div class="top-news mb__30">
+                <div class="feature-image">
+                  <a href="">
+                    <img src="img/top-news/13.jpg" alt="">
+                  </a>
+                </div>
+                <ul class="cat-two">
+                  <li><a href="#">Advancer,</a></li>
+                  <li><a href="#">Sports</a></li>
+                </ul>
+                <h3 class="blog-title">
+                  <a href="#">Final Fantasy XV: ‘Good News’ Coming at Gamescom</a>
+                </h3>
+              </div>
+              <div class="top-news mb__30">
+                <div class="feature-image">
+                  <a href="">
+                    <img src="img/top-news/14.jpg" alt="">
+                  </a>
+                </div>
+                <ul class="cat-two">
+                  <li><a href="#">Advancer,</a></li>
+                  <li><a href="#">Sports</a></li>
+                </ul>
+                <h3 class="blog-title">
+                  <a href="#">Final Fantasy XV: ‘Good News’ Coming at Gamescom</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="top-mews-feature">
+            <div class="feature-image">
+              <div class="feature-image">
+                <a href="#">
+                  <img src="img/top-news/15.jpg" alt="">
+                </a>
+              </div>
+              <ul class="cat">
+                <li>
+                  <a href="#" class="tim-btn">Advancer</a>
+                </li>
+                <li>
+                  <a href="#" class="tim-btn">Sports</a>
+                </li>
+              </ul>
+            </div>
+            <div class="blog-content">
+              <h3 class="blog-title">
+                <a href="#">
+                  <span>Final Fantasy XV:</span> ‘Good News’ Coming at Gamescom
+                </a>
+              </h3>
+              <ul class="meta meta-grey">
+                <li class="mr__0"><a href="#" class="admin">George Steven</a></li>
+                <li class="mr__0"><a href="#" class="date">5 month ago</a></li>
+              </ul>
+              <p class="content">
+                Nova was the videoly that we all wanted to read in the Sixties because every issue brought something new
+                and ...
+              </p>
+              <ul class="meta">
+                <li><a href="#"><i class="fa-solid fa-comments"></i> 220 Comments</a></li>
+                <li><a href="#"><i class="fa-solid fa-eye"></i> 2250 View</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======= laest News ======= -->
+  <section id="laest-news">
+    <div class="container">
+      <div class="section-title-two">
+        <h2 class="title">Letest News</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-5 col-md-12">
+          <div class="latest-post blog-large">
+            <div class="feature-image">
+              <a href="#">
+                <img src="img/lasest-news/19.jpg" alt="Gamescom">
+              </a>
+              <div class="blog-content">
+                <h3 class="blog-title">
+                  Final 'Game of Thrones' Episodes
+                </h3>
+                <p>
+                  
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="latest-post mb-30">
+            <div class="feature-image">
+              <a href="#">
+                <img src="img/lasest-news/20.jpg" alt="games">
+              </a>
+              <div class="blog-content">
+                <h3 class="blog-title">Final 'Game of Thrones' Episodes</h3>
+                <p class="contents">
+                  
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="latest-post">
+            <div class="feature-image">
+              <a href="#">
+                <img src="img/lasest-news/21.jpg" alt="games">
+              </a>
+              <div class="blog-content">
+                <h3 class="blog-title">Final 'Game of Thrones' Episodes</h3>
+                <p class="contents">
+                  
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+									
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="latest-post mb-25">
+            <div class="feature-image">
+              <a href="#">
+                <img src="img/lasest-news/23.jpg" alt="games">
+              </a>
+              <div class="blog-content">
+                <div class="content">
+                  <h3 class="blog-title">Final 'Game of Thrones' Episodes</h3>
+                  <a href="#" class="read-more tim-btn">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
 
 
@@ -82,6 +779,8 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- swiper js -->
+  <script src="js/swiper/swiper-bundle.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
